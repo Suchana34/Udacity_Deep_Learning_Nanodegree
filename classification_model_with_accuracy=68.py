@@ -20,4 +20,5 @@ model.add(Dense(2, activation='softmax'))
 model.compile(optimizer='sgd', loss='categorical_crossentropy', metrics=['accuracy'])
 
 # Fit the model
-model.fit(predictors, target)
+model.fit(predictors, target, validation_split=0.0)
+
